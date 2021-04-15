@@ -4,3 +4,60 @@
 2021-04-15 22:16:46,904    PLAIN [setup.py:194 -                 main(): Setting machine to "qemux86-64"
 2021-04-15 22:16:47,101    PLAIN [utils_setup.py:51 -              run_cmd(): Adding existing repo at 'wrlinux-x' to the index
 2021-04-15 22:16:47,166    PLAIN [setup.py:983 -         commit_files(): Updated project configuration
+2021-04-15 22:16:47,184    PLAIN [utils_setup.py:51 -              run_cmd(): [master (root-commit) 7ad06d9] Configuration change - --machines qemux86-64
+2021-04-15 22:16:47,184    PLAIN [utils_setup.py:51 -              run_cmd(): 19 files changed, 670 insertions(+)
+2021-04-15 22:16:47,184    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 .gitconfig
+2021-04-15 22:16:47,185    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 .gitignore
+2021-04-15 22:16:47,185    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 .gitmodules
+2021-04-15 22:16:47,185    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 .templateconf
+2021-04-15 22:16:47,185    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 README
+2021-04-15 22:16:47,185    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 config/bblayers.conf.sample
+2021-04-15 22:16:47,185    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 config/conf-notes.txt
+2021-04-15 22:16:47,185    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 config/local.conf.sample
+2021-04-15 22:16:47,186    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 config/log/2021-04-15-22:16:36+0000.log
+2021-04-15 22:16:47,186    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 config/site.conf.sample
+2021-04-15 22:16:47,186    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 default.xml
+2021-04-15 22:16:47,186    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 layers/local/README
+2021-04-15 22:16:47,186    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 layers/local/classes/.keepme
+2021-04-15 22:16:47,186    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 layers/local/conf/layer.conf
+2021-04-15 22:16:47,187    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 layers/local/downloads/.keepme
+2021-04-15 22:16:47,187    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 layers/local/git/.keepme
+2021-04-15 22:16:47,187    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 layers/local/recipes-sample/hello/hello/hello.c
+2021-04-15 22:16:47,187    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 100644 layers/local/recipes-sample/hello/hello_1.0.bb
+2021-04-15 22:16:47,187    PLAIN [utils_setup.py:51 -              run_cmd(): create mode 160000 wrlinux-x
+2021-04-15 22:17:29,161    ERROR [logger_setup.py:134 -                write(): Traceback (most recent call last):
+
+2021-04-15 22:17:29,162    ERROR [logger_setup.py:134 -                write():   File "/home/drs/my_project/wrlinux-x/bin/setup.py", line 1188, in <module>
+
+2021-04-15 22:17:29,163    ERROR [logger_setup.py:134 -                write():     
+2021-04-15 22:17:29,164    ERROR [logger_setup.py:134 -                write(): x.main(sys.argv)
+2021-04-15 22:17:29,164    ERROR [logger_setup.py:134 -                write():   File "/home/drs/my_project/wrlinux-x/bin/setup.py", line 221, in main
+
+2021-04-15 22:17:29,165    ERROR [logger_setup.py:134 -                write():     
+2021-04-15 22:17:29,165    ERROR [logger_setup.py:134 -                write(): self.repo_sync()
+2021-04-15 22:17:29,165    ERROR [logger_setup.py:134 -                write():   File "/home/drs/my_project/wrlinux-x/bin/setup.py", line 1007, in repo_sync
+
+2021-04-15 22:17:29,166    ERROR [logger_setup.py:134 -                write():     
+2021-04-15 22:17:29,167    ERROR [logger_setup.py:134 -                write(): self.call_initial_repo_sync(cmd)
+2021-04-15 22:17:29,167    ERROR [logger_setup.py:134 -                write():   File "/home/drs/my_project/wrlinux-x/bin/setup.py", line 1090, in call_initial_repo_sync
+
+2021-04-15 22:17:29,169    ERROR [logger_setup.py:134 -                write():     
+2021-04-15 22:17:29,169    ERROR [logger_setup.py:134 -                write(): self.call_repo_sync(args)
+2021-04-15 22:17:29,169    ERROR [logger_setup.py:134 -                write():   File "/home/drs/my_project/wrlinux-x/bin/setup.py", line 1118, in call_repo_sync
+
+2021-04-15 22:17:29,171    ERROR [logger_setup.py:134 -                write():     
+2021-04-15 22:17:29,171    ERROR [logger_setup.py:134 -                write(): utils_setup.run_cmd(cmd, environment=self.env, log=log_it)
+2021-04-15 22:17:29,171    ERROR [logger_setup.py:134 -                write():   File "/home/drs/my_project/wrlinux-x/bin/utils_setup.py", line 58, in run_cmd
+
+2021-04-15 22:17:29,172    ERROR [logger_setup.py:134 -                write():     
+2021-04-15 22:17:29,172    ERROR [logger_setup.py:134 -                write(): ret.wait()
+2021-04-15 22:17:29,172    ERROR [logger_setup.py:134 -                write():   File "/home/drs/my_project/bin/buildtools.buildtools-standalone-20171016/sysroots/x86_64-wrlinuxsdk-linux/usr/lib/python3.5/subprocess.py", line 1389, in wait
+
+2021-04-15 22:17:29,174    ERROR [logger_setup.py:134 -                write():     
+2021-04-15 22:17:29,174    ERROR [logger_setup.py:134 -                write(): (pid, sts) = self._try_wait(0)
+2021-04-15 22:17:29,174    ERROR [logger_setup.py:134 -                write():   File "/home/drs/my_project/bin/buildtools.buildtools-standalone-20171016/sysroots/x86_64-wrlinuxsdk-linux/usr/lib/python3.5/subprocess.py", line 1339, in _try_wait
+
+2021-04-15 22:17:29,176    ERROR [logger_setup.py:134 -                write():     
+2021-04-15 22:17:29,177    ERROR [logger_setup.py:134 -                write(): (pid, sts) = os.waitpid(self.pid, wait_flags)
+2021-04-15 22:17:29,177    ERROR [logger_setup.py:134 -                write(): KeyboardInterrupt
+2021-04-15 22:17:29,177    ERROR [logger_setup.py:134 -                write(): 
