@@ -1,0 +1,3 @@
+[submodule "wrlinux-x"]
+	path = wrlinux-x
+	url = ./wrlinux-x

@@ -1,0 +1,7 @@
+[user]
+	name = customer
+	email = customer@company.com
+[color]
+	ui = false
+	diff = false
+	status = false

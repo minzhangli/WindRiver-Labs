@@ -1,0 +1,32 @@
+<manifest>
+    <remote  name="base" fetch="git@github.com:WindRiver-Labs"/>
+    <default revision="WRLINUX_10_17_BASE_UPDATE0002" remote="base" sync-j="4"/>
+    <project name="bitbake" remote="base" path="layers/oe-core/bitbake" revision="WRLINUX_10_17_BASE_UPDATE0002">
+        <linkfile src="." dest="bitbake"/>
+    </project>
+    <project name="meta-dpdk" remote="base" path="layers/meta-dpdk" revision="WRLINUX_10_17_BASE_UPDATE0002">
+    </project>
+    <project name="meta-openembedded" remote="base" path="layers/meta-openembedded" revision="WRLINUX_10_17_BASE_UPDATE0002">
+    </project>
+    <project name="meta-realtime" remote="base" path="layers/meta-realtime" revision="WRLINUX_10_17_BASE_UPDATE0002">
+    </project>
+    <project name="meta-secure-core" remote="base" path="layers/meta-secure-core" revision="WRLINUX_10_17_BASE_UPDATE0002">
+    </project>
+    <project name="meta-security" remote="base" path="layers/meta-security" revision="WRLINUX_10_17_BASE_UPDATE0002">
+    </project>
+    <project name="meta-selinux" remote="base" path="layers/meta-selinux" revision="WRLINUX_10_17_BASE_UPDATE0002">
+    </project>
+    <project name="meta-virtualization" remote="base" path="layers/meta-virtualization" revision="WRLINUX_10_17_BASE_UPDATE0002">
+    </project>
+    <project name="oe-core" remote="base" path="layers/oe-core" revision="WRLINUX_10_17_BASE_UPDATE0002">
+        <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
+        <linkfile src="meta" dest="meta"/>
+        <linkfile src="scripts" dest="scripts"/>
+    </project>
+    <project name="wr-template" remote="base" path="layers/wr-template" revision="WRLINUX_10_17_BASE_UPDATE0002">
+    </project>
+    <project name="wrlinux" remote="base" path="layers/wrlinux" revision="WRLINUX_10_17_BASE_UPDATE0002">
+    </project>
+    <project name="linux-yocto-4.12" remote="base" path="layers/wrlinux/git/linux-yocto-4.12.git" bare="True"/>
+    <project name="yocto-kernel-cache" remote="base" path="layers/wrlinux/git/yocto-kernel-cache.git" bare="True"/>
+</manifest>
